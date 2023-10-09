@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+       <%= title %>
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="contact-list-container">
+            <!-- <img src="C:\Users\DELL\Downloads\contact(2).png"> -->
+            <!-- <img src="/image/contact.png" alt="image"> -->
+            <h1 id="contact-heading">
+        <img src="/image/contact.png" alt="image">
+                My contacts List
+            </h1>
+            <ul id="contact-list">
+                <% for(let i of contact_list) {%>
+              <li>
+                <div>
+                <p><%= i.name %></p>
+                <p><%= i.phone %></p>
+                </div>
+                <button id="delete-button">
+                    <a href="/delete-contact/?id=<%= i._id %>">
+                        delete
+                    </a>
+                </button>
+              </li>
+              
+               <% } %>
+            </ul>    
+        </div>
+
+        <div id="form-container">
+            <h1 id="form-heading">
+             <img src="/image/phone-add.png">
+                Add contacts</h1>
+            <form action="/create-contact" method="post">
+    <div class="input-containter-margin">
+        <label  for="Name">Name</label>
+        <br/>
+         <input class="input-style" type="text" name="name" id="name" placeholder="Enter your name" required>
+    
+    </div>
+    <div class="input-containter-margin">
+        <label for="Phonenumber">
+             Phone Number </label>
+        <br/>
+        <input class="input-style" type="number" name="phone" id="Phonenumber" placeholder="Enter phone number" required>
+       <br/>
+        <button id="add-contact-button" type="submit">Add</button>
+    </div>
+            </form>
+           </div>
+    </body>
+</html>

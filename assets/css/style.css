@@ -1,0 +1,105 @@
+body{
+    margin-top:60px;
+    background-color: black;
+    color:rgb(103, 7, 7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+#contact-list-container{
+    /* display:flex;
+    flex-wrap:wrap; */
+text-align: center;
+background-color: rgb(235, 242, 242);
+width:55%;
+/* margin-right:20px; */
+}
+
+#contact-heading{
+  text-align:center;
+color:rgb(18, 18, 102);
+}
+
+#contact-list{
+list-style:none;
+margin-right:40px;
+margin-left:-10px;
+}
+
+#contact-list li{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    text-align:left;
+    color:white;
+     font-style:oblique;
+     padding-left:10px;
+     padding-top:3px;
+     width:100%;
+     font-size:1.1rem;
+background:linear-gradient(rgb(196, 51, 196),rgb(103, 103, 216))
+}
+
+#delete-button{
+ height:30px;
+ width:100px;
+margin-right:12px;
+border-radius:20px 20px;
+}
+
+#delete-button:hover{
+border:2px solid blue;
+}
+
+#delete-button a{
+color:rgb(101, 12, 46);
+text-decoration:none;
+font-family:Arial;
+}
+
+               /* add contact form seciton */
+               
+#form-heading{
+color:white;
+font-family: 'Lucida Sans';
+margin-left:50px
+}
+
+label{
+color:yellow;
+font-size:1.1rem;
+font-weight:900;
+}
+.input-containter-margin{
+margin-top:30px;
+margin-right:40px;
+margin-left:-30px;
+}
+
+.input-style{
+color:white;
+border:none;
+width:140%;
+line-height:50px;
+/* margin-top:20px; */
+border-bottom:2px solid wheat;
+outline:transparent;
+background-color:transparent;
+}
+
+#add-contact-button{
+margin-left:100px;
+margin-top:40px;
+border-radius:10px 10px;
+height:30px;
+width:90px;
+background:greenyellow;
+font-family:Cambria;
+font-weight:700;
+color:rgb(31, 102, 132);
+}
+
+#add-contact-button:hover{
+border:2px solid rgb(42, 231, 244);
+}
